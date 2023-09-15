@@ -1,0 +1,212 @@
+:root{
+    --background: #2A3492;
+    --fontWhite: white;
+    --black: black;
+    --footerBackground: #222b79;
+    --fontGray: rgb(204, 204, 204);
+    --secColor: #a6afff;
+    --bmc-color: #FFDD00;
+}  
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+Body{
+    background: var(--background);
+    font-family: 'Roboto', sans-serif;
+    min-height: 100%;
+    position: relative;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+    color: var(--fontWhite);
+}   
+
+.header h1{
+    font-family: 'Patrick Hand', cursive;
+    font-size: 55px;
+    font-weight: lighter;
+}
+
+.header p{
+    font-family: 'Patrick Hand', cursive;
+    font-weight: lighter;
+
+}
+
+
+.main-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    max-width: 1238px;
+    margin: 0 auto;
+    padding: 50px 100px;
+}
+
+.container {
+    width: 100%;
+    max-width: 50px;
+    height: auto; 
+    max-width: 100%; 
+    overflow: hidden;
+    position: relative; 
+}
+
+.container img {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: 0.02s;
+}
+
+.container img:hover {
+    display: block;
+    cursor: pointer;
+    border: 3px solid var(--black);
+}
+
+@media (max-width: 518px) {
+    .main-container{
+        padding: 50px 40px;
+    }
+}
+
+@media (max-width: 389px) {
+    .main-container{
+        padding: 50px 10px;
+    }
+}
+
+footer{
+    background: var(--footerBackground);
+    height: 250px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 100px 0px;
+}
+
+
+
+.social-media{
+    display: flex; 
+    padding: 10px;
+}
+
+.social-media button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    padding: 0px 30px;
+    font-size: 28px;
+    font-family: 'Patrick Hand', cursive;
+    flex-direction: row;
+    margin: 10px;
+    border-radius: 12px;
+    background: none;
+    border: 2px solid var(--fontWhite);
+    color: var(--fontWhite);
+    transition: .2s;
+}
+
+.social-media button:hover{
+    color: var(--black);
+    background: var(--fontWhite);
+    cursor: pointer;
+}
+
+ion-icon{
+    padding-right: 3px;
+}
+
+.bmc-btn{
+    background-color: transparent !important;
+    border: 2px solid var(--bmc-color) !important;
+    color: var(--bmc-color) !important;
+    margin: 10px;
+    transition: .2s;
+}
+
+.logo-coffee{
+    fill: var(--bmc-color) !important;
+}
+
+.bmc-btn:hover{
+    background-color: var(--bmc-color) !important;
+    color: var(--fontWhite) !important;
+
+    .logo-coffee{
+        fill: var(--fontWhite) !important;
+    }
+}
+
+@media (max-width: 530px) {
+    footer{
+        padding: 150px 0px;
+    }
+    .social-media{
+        flex-direction: column;
+    }
+}
+
+
+.footer a{
+    margin-bottom: 5px;
+    text-align: center;
+    color: var(--secColor);
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 1.5;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+}
+.footer a:hover{
+    text-decoration: underline;
+}
+
+.footer p{
+    margin-top: 15px;
+    margin-bottom: 0px;
+    text-align: center;
+    color: var(--fontGray);
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 1.5;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+
+
+/* Webkit-basierte Browser - Schienen */
+::-webkit-scrollbar-track {
+    background-color: var(--footerBackground);
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--fontGray); 
+  border-radius: 30px;
+}
