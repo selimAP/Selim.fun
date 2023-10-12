@@ -196,8 +196,6 @@ ion-icon{
 
 
 
-
-/* Webkit-basierte Browser - Schienen */
 ::-webkit-scrollbar-track {
     background-color: var(--footerBackground);
 }

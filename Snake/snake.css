@@ -1,0 +1,159 @@
+:root{
+    --background: #838f02;
+    --menuColor: #3f4402;
+    --buttonHover: #747e04;
+    --fontWhite: white;
+    --black: black;
+    --fontGray: rgb(204, 204, 204);
+}  
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+Body{
+    background: var(--background);
+    min-height: 100%;
+}
+
+.header a{
+    position: absolute;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 40px;
+    text-decoration: none;
+    color: var(--fontWhite);
+    margin: 10px;
+}
+
+.header a:hover{
+    font-size: 42px;
+}
+
+.main{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: var(--background);
+}
+
+.snake{
+    margin-top: 0px;
+
+}
+.snake canvas{
+    display: flex;
+    border:3px solid var(--black);
+}
+
+.counting{
+    color: var(--black);
+    display: flex;
+    justify-content: right;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 25px;
+    background: var(--background);
+}
+.counter{
+    background: var(--background);
+}
+
+.main-menu{
+    display: block;
+    font-family: 'Press Start 2P', cursive;
+    position: fixed;
+    z-index: 10000;
+        border: 3px solid var(--black);
+        padding: 100px;
+        background: var(--menuColor);
+}
+
+.Score{
+    color: var(--fontWhite);
+}
+.Score h2{
+    background: var(--menuColor);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+.Score div{
+    background: var(--menuColor);
+    font-size: 40px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.menuButtons{
+    background: var(--menuColor);
+    display: flex;
+    justify-content: center;
+}
+.menuButtons button{
+    background: var(--menuColor);
+    height: 40px;
+    width: 150px;
+    border: 1px solid var(--fontWhite);
+    border-radius: 3px;
+    color: var(--fontWhite);
+    font-family: 'Press Start 2P', cursive;
+    margin: 20px  10px 0px 10px;
+}
+.menuButtons button:hover{
+    background: var(--buttonHover);
+    transition: .3s;
+    cursor: pointer;
+}
+
+.music-volume{
+    background: var(--menuColor);
+    display: flex;
+    justify-content: center;
+}
+.music-volume button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--menuColor);
+    height: 40px;
+    width: 40px;
+    border: 1px solid var(--fontWhite);
+    border-radius: 50%;
+    color: var(--fontWhite);
+    font-family: 'Press Start 2P', cursive;
+    margin-top: 10px;
+    font-size: 20px;
+}
+.music-volume button:hover{
+    background: var(--buttonHover);
+    transition: .3s;
+    cursor: pointer;
+}
+
+.music-volume ion-icon{
+    background: none;
+    display: flex;
+}
+
+.music-volume span{
+    display: none;
+}
+
+
+::-webkit-scrollbar-track {
+    background-color: var(--footerBackground);
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--fontGray); 
+  border-radius: 30px;
+}

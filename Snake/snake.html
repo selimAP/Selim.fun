@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selim.fun | Snake</title>
+    <link rel="stylesheet" href="snake.css">
+    <link rel="icon" href="images/snake-logo.webp">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    
+    <div class="header">
+        <a href="../..">Selim.fun</a>
+    </div>
+
+    <div class="main">
+
+        <div class="snake">
+            <div class="counting">
+                <div class="counter" id="counter">00</div>
+            </div>
+            <canvas id="canvas" width="480" height="480"></canvas>
+        </div>
+        <div class="main-menu" id="mainMenu">
+            <div class="menu-container">
+                <div class="Score">
+                    <h2>Current score:</h2>
+                    <div id="CurrentScore">00</div>
+                </div>
+                <div class="menuButtons">
+                    <button id="startButton">Start</button>
+                    <button onclick="window.open('https://github.com/selimAP', '_blank');">Credits</button>
+                </div>
+                <div class="music-volume">
+                    <button id="musicVolume"><ion-icon name="volume-mute-outline"></ion-icon></button>
+                </div>
+         </div>
+    </div>
+    
+
+
+    <script src="snake.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
