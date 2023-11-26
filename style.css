@@ -1,11 +1,12 @@
 :root{
-    --background: #2A3492;
+    --background: #1F1038;
     --fontWhite: white;
     --black: black;
-    --footerBackground: #222b79;
+    --footerBackground: #180c2b;
     --fontGray: rgb(204, 204, 204);
-    --secColor: #a6afff;
+    --secColor: #FD02FC;
     --bmc-color: #FFDD00;
+    --pink: #FD02FC;
 }  
 
 *{
@@ -26,7 +27,7 @@ Body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 100px;
+    padding-top: 92px;
     color: var(--fontWhite);
 }   
 
@@ -39,7 +40,7 @@ Body{
 .header p{
     font-family: 'Patrick Hand', cursive;
     font-weight: lighter;
-
+    color: var(--fontGray);
 }
 
 
@@ -56,7 +57,7 @@ Body{
 .container {
     width: 100%;
     max-width: 50px;
-    height: auto; 
+    height: auto;
     max-width: 100%; 
     overflow: hidden;
     position: relative; 
@@ -90,17 +91,15 @@ Body{
 }
 
 footer{
-    background: var(--footerBackground);
-    height: 250px;
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background: var(--footerBackground);
+    height: 250px;
+    width: 100%;
     padding: 100px 0px;
 }
-
-
 
 .social-media{
     display: flex; 
@@ -208,3 +207,27 @@ ion-icon{
   background: var(--fontGray); 
   border-radius: 30px;
 }
+
+
+.div {
+  width: 100%;
+
+  background: 
+    repeating-linear-gradient(
+      to right,
+      transparent,
+      transparent 40px, 
+      var(--pink) 40px,
+      var(--pink) 41px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      transparent,
+      transparent 40px, 
+      var(--pink) 40px,
+      var(--pink) 41px
+    ),
+    linear-gradient(15deg, var(--background), var(--background));
+    background-attachment: fixed;
+}
+  
